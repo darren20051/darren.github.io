@@ -1,0 +1,82 @@
+/* Apply a global box-sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #F7F7F7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Style the header with a gradient background */
+header {
+  background: linear-gradient(135deg, #6930C3, #DD7596);
+  padding: 30px;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+/* Style the navigation column */
+nav {
+  float: left;
+  width: 20%;
+  background: #F0F0F0;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  background: #ECF3FF;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer with a gradient background */
+footer {
+  background: linear-gradient(135deg, #5E60CE, #F08A5D);
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  nav, article {
+    width: 100%;
+  }
+}
+
+/* Style for a two-column section */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  background: #F0F0F0;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional creative styles can be added as needed */
