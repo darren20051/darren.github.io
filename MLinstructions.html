@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ML</title>
-	<style>
-img {
-  float: right;
-}
-.button {
-  background-color: #008CBA; /* Blue */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
+    <title>ML - Interactive Machine Language</title>
+    <style>
+        body {
+            background-color: #1E2A38;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+
+        .button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 18px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #005F80;
+        }
+
+        img {
+            float: right;
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00B8D4;
+            font-size: 18px;
+        }
+
+        .instructions-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .instruction-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
-
 <h3>A Simple Interactive Machine Language</h3>
 
-<p>
+<div class="instructions-container">
+    <img id="MLinstrucitons" src="MLblank.png" class="instruction-image">
+    <div>
+        <button class="button" onclick="changeInstruction('ML1.png', 'EI1.png')">156C</button><br>
+        <button class="button" onclick="changeInstruction('ML2.png', 'EI2.png')">166D</button><br>
+        <button class="button" onclick="changeInstruction('ML3.png', 'EI3.png')">5056</button><br>
+        <button class="button" onclick="changeInstruction('ML4.png', 'EI4.png')">306E</button><br>
+        <button class="button" onclick="changeInstruction('ML5.png', 'EI5.png')">C000</button><br>
+    </div>
+    <img id="Englishinstrucitons" src="" class="instruction-image">
+</div>
 
-<img id="MLinstrucitons" src="MLblank.png" >
+<a href="index.html">Back to Home</a>
 
-
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML1.png'; document.getElementById('Englishinstrucitons').src='EI1.png'">156C</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML2.png'; document.getElementById('Englishinstrucitons').src='EI2.png'">166D</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML3.png'; document.getElementById('Englishinstrucitons').src='EI3.png'">5056</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML4.png'; document.getElementById('Englishinstrucitons').src='EI4.png'">306E</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML5.png'; document.getElementById('Englishinstrucitons').src='EI5.png'">C000</button><br>
-<img id="Englishinstrucitons" src="" >
-
-
-
-
-
-<a href="index.html">Back to Home</a></h3>
-
-</p>
-
-
-
-
-
+<script>
+function changeInstruction(mlImage, englishImage) {
+    document.getElementById('MLinstrucitons').src = mlImage;
+    document.getElementById('Englishinstrucitons').src = englishImage;
+}
+</script>
 
 </body>
 </html>
