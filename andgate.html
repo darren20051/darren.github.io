@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AND</title>
+    <title>Cool AND Logic Gate</title>
     <style>
-        .button {
-            background-color: #008CBA; /* Blue */
-            border: none;
-            color: white;
-            padding: 15px 32px;
+        body {
+            background-color: #1E2A38;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        .button {
+            background-color: #00B8D4;
+            color: #ffffff;
+            border: none;
+            padding: 15px 32px;
+            font-size: 18px;
+            border-radius: 5px;
             cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0091A4;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00B8D4;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-container {
+            margin: 20px;
+        }
+
+        .output-container {
+            margin: 20px;
         }
     </style>
 </head>
 <body>
 
-<script src="javascript.js"></script>
-<script>
-    // JavaScript code here (assuming you have functions like and(), toggleImage(), toggleInputOne(), toggleInputTwo())
-</script>
+<h2>Cool AND Logic Gate</h2>
 
 <button class="button" onclick="and()">Run</button>
+
 <p>
-
-<table style="width:100%">
-
-    <tr>
-        <td>
-            <img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png" id="toggleImage" onclick="toggleImage(); toggleInputOne();"/>
+    <div class="container">
+        <div class="input-container">
+            <img src="button-off.png" id="toggleImage" onclick="toggleImage(); toggleInputOne();">
             <br>
-            <img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png" id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();"/>
-        </td>
-        <td><img id="andGate" src="and2off.PNG" ></td>
-    </tr>
-
-</table>
+            <img src="button-off.png" id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();">
+        </div>
+        <div class="output-container">
+            <img id="andGate" src="and2off.PNG">
+        </div>
+    </div>
+</p>
 
 <a href="index.html">Back to Home</a>
-</p>
 
 </body>
 </html>
