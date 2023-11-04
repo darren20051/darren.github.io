@@ -1,41 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FoC</title>
+<title>FoC - About Me</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    background-image: url('picture url goes here');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
+  header {
+    background-color: #354F52;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  header h2 {
+    font-size: 36px;
+  }
+
+  .navbar {
+    background-color: #354F52;
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .navbar li {
+    display: inline;
+    margin: 0 20px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .navbar a:hover {
+    color: #00B8D4;
+  }
+
+  .content-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .content-container:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+  }
+</style>
 </head>
 <body>
 
 <header>
-  <h2><b>Fundamentals of Computing</b></h2>
+  <h2><b>Fundamentals of Computing - About Me</b></h2>
 </header>
 
+<div class="navbar">
+  <ul>
+    <li><a href="index.html">Course</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="concepts.html">Concepts</a></li>
+    <li><a href="database.html">Databases</a></li>
+    <li><a href="documentation.html">Documentation</a></li>
+    <li><a href="aboutme.html">about me</a></li>
+  </ul>
+</div>
+
 <section>
-  <nav>
-    <ul>
-      <li><h5><a href="index.html">Course</a></h5></li>
-      <li><h5><a href="project.html">Project</a></h5></li>
-	  <li><h5><a href="concepts.html">Concepts</a></h5></li>
-	  <li><h5><a href="database.html">Databases</a></h5></li>
-	  <li><h5><a href="documentation.html">Documentation</a></h5></li>
-      <li><h5><a href="aboutme.html">about me</a></h5></li>
-    </ul>
-  </nav>
-  
   <article>
     <h1>About Me</h1>
-    <p><img src="darren.jpg" alt="Darren Cartagena" width="122" height="122" style="float:left; margin-right:50px">
-darren is a very intrigued person that loves studying IT at the university of belize. darren is 18 years old and lives in armenia village. he is currently 
-very motivated to keep on going with life.</p>
-    </article>
+    <div style="float: left; margin-right: 20px;">
+      <img src="darren.jpg" alt="Darren Cartagena" width="122" height="122">
+    </div>
+    <p>
+      Darren is a very intrigued person who loves studying IT at the University of Belize. He is 18 years old and lives in Armenia Village. He is currently very motivated to keep on going with life.
+    </p>
+  </article>
 </section>
 
 <footer>
-  <p>made and designed by Darren Adilzon Cartagena</p>
+  <p>Made and designed by Darren Adilzon Cartagena</p>
 </footer>
 
 </body>
