@@ -1,101 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FoC - Project 1: UNICODE</title>
+<title>FoC</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  section {
-    text-align: center;
-    padding: 20px;
-  }
-
-  h2 {
-    font-size: 28px;
-    color: #354F52;
-  }
-
-  p {
-    font-size: 18px;
-    color: #354F52;
-  }
-
-  input[type="text"] {
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  button {
-    background-color: #354F52;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: #00B8D4;
-  }
-
-  table {
-    margin: 20px auto;
-    border: 1px solid #354F52;
-    width: 50%;
-    border-collapse: collapse;
-  }
-
-  th {
-    font-size: 20px;
-    background-color: #354F52;
-    color: #fff;
-    padding: 10px;
-  }
-
-  img {
-    width: 700px;
-    height: 400px;
-    margin: 20px auto;
-    display: block;
-  }
-
-  footer {
-    text-align: center;
-    background-color: #354F52;
-    color: #fff;
-    padding: 10px;
-  }
 </style>
 </head>
 <body>
 
 <section>
-  <h2>Project 1: UNICODE</h2>
-  <hr>
-  <p>Please input a UNICODE number:</p>
+<h2>Project 1: UNICODE</h2>
+<hr>
 
-  <input id="numb" type="text">
+<center>
+<p>Please input UNICODE number:</p>
 
-  <button type="button" onclick="myFunction()">Submit</button>
+<input id="numb" type="text">
 
-  <table>
-    <tr>
-      <th><p id="demo"></p></th>
-    </tr>
-  </table>
+<button type="button" onclick="myFunction()">Submit</button>
+<br>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+  <tr>
+    <th><center><p id="demo"></p></center></th>
+  </tr>
+</table>
 
-  <img src="uni1.jpg" alt="UNICODE 1">
-  <img src="uni3.jpg" alt="UNICODE 3">
-  <img src="uni4.jpg" alt="UNICODE 4">
+<p><img src="uni1.jpg" style="width:700px;height:400px;"></p>
+<p><img src="uni3.jpg" style="width:700px;height:400px;"></p>        
+<p><img src="uni4.jpg" style="width:700px;height:400px;"></p>
+
+</center>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  text = x;
+  unicode = ("&#x" + x)
+
+  document.getElementById("demo").innerHTML = unicode;
+}
+</script>
 
 </section>
 
@@ -104,15 +55,6 @@
 <footer>
   <p>Made and designed by Darren Adilzon Caratgena!!</p>
 </footer>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("numb").value;
-  var unicode = ("&#x" + x);
-
-  document.getElementById("demo").innerHTML = unicode;
-}
-</script>
 
 </body>
 </html>
