@@ -1,63 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FoC</title>
+<title>FoC - ASCII Project</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-img {
-  float: left;
- padding-right: 40px; 
- padding-left: 40px;
- padding-bottom: 40px;
- 
-}
+  body {
+    background-image: url('picture url goes here');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #354F52;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  header h2 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .container:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  .ascii-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .input-container {
+    text-align: center;
+  }
+
+  input {
+    font-size: 18px;
+    width: 100px;
+  }
+
+  button {
+    background-color: #00B8D4;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0091A4;
+  }
+
+  .result {
+    font-size: 24px;
+    margin-top: 20px;
+  }
 </style>
 </head>
 <body>
 
+<header>
+  <h2><b>Fundamentals of Computing - ASCII Project</b></h2>
+  <p>Enter a number from 0 to 127 and see its ASCII value.</p>
+</header>
+
 <section>
-<h2>Project 1: ASCII</h2>
-<hr>	
+  <div class="container">
+    <h2>ASCII Converter</h2>
+    <hr>
+    <p class="input-container">
+      <input id="inputdec" placeholder="Enter a number (0-127)">
+      <button onclick="decToASCII()">Convert</button>
+    </p>
+    <div class="ascii-image">
+      <img src="ascii.png" alt="ASCII Art">
+    </div>
+    <div class="result">
+      <p>ASCII Value: <span id="demo"></span></p>
+    </div>
+  </div>
+</section>
 
+<a href="index.html">Back to Home</a>
 
-<p><img src="ascii.png" style="width:792px;height:528px;"></p>
-        
-			
-
-<p></p>
-<p></p>         
-
-
-<p>Enter any number from 0 to 127 :</p>
-<input id="inputdec" >
-<p></p>
-<button onclick="decToASCII()">Submit</button>
-<p></p>
-<p>ASCII Value : </p>
-<p id="demo"></p>
+<footer>
+  <p>Made and designed by Darren Adilzon Cartagena!!</p>
+</footer>
 
 <script>
 function decToASCII() {
-  x = document.getElementById("inputdec").value;
+  var x = document.getElementById("inputdec").value;
   var res = String.fromCharCode(x);
   document.getElementById("demo").innerHTML = res;
   console.log(res);
 }
 </script>
-
-
-
-</section>
-
-
-<a href="index.html">Back to Home</a></h3>
-
-<footer>
-  <p>Made and designed by Darren Adilzon Cartagena!!</p>
-</footer>
 
 </body>
 </html>
