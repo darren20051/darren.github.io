@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FoC</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-img {
-  float: left;
- padding-right: 40px; 
- padding-left: 40px;
- padding-bottom: 40px;
- 
-}
-</style>
+    <title>Cool Binary to Hexadecimal Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #1E2A38;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        hr {
+            border-color: #00B8D4;
+            width: 50%;
+        }
+
+        img {
+            float: left;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-bottom: 40px;
+        }
+
+        input {
+            width: 100px;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #00B8D4;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #00B8D4;
+            color: #ffffff;
+            border: none;
+            padding: 15px 32px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0091A4;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00B8D4;
+            font-size: 18px;
+        }
+
+        footer {
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
 
-<section>
-<h2>Project 1: Binary to Hexidecimal</h2>
-<hr>	
+<h2>Cool Binary to Hexadecimal Converter</h2>
 
+<hr>
 
-<p><img src="bintohex.jpg"></p>
-        
-			
-         
+<img src="bintohex.jpg" alt="Binary to Hexadecimal" style="width: 300px; height: auto;">
+
 <input type="number" id="inputBin" value="">
 
-<p>Enter any 4 digit binary number:</p>
+<p>Enter any 4-digit binary number:</p>
 
-<button onclick="binToHex()">Submit</button>
+<button onclick="binToHex()">Convert</button>
 
-<p>Hexidecimal Value : </p>
+<p>Hexadecimal Value:</p>
 <p id="demo"></p>
 
 <script>
 function binToHex() {
-  var x = document.getElementById("inputBin").value;
-  var hexOut = parseInt(x , 2).toString(16).toUpperCase();
-  document.getElementById("demo").innerHTML = hexOut;
-  }
+    var x = document.getElementById("inputBin").value;
+    var hexOut = parseInt(x, 2).toString(16).toUpperCase();
+    document.getElementById("demo").innerHTML = hexOut;
+}
 </script>
 
-
-
-</section>
-
-
-<a href="index.html">Back to Home</a></h3>
+<a href="index.html">Back to Home</a>
 
 <footer>
-  <p>Made and designed by Darren Adilzon Cartagena!!</p>
+  <p>Made and designed by Darren Adilzon Cartagena</p>
 </footer>
 
 </body>
