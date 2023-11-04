@@ -1,38 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FoC</title>
+<title>Cool Not Gate Project</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    background-color: #1E2A38;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
 
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .column {
+    background-color: #354F52;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+  }
+
+  button {
+    background-color: #00B8D4;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #0091A4;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #00B8D4;
+    font-size: 18px;
+  }
+</style>
 </head>
 <body>
-<center>
+
 <section>
-<h2>Project 1: Not Gate</h2>
+  <h2>Cool Not Gate Project</h2>
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Input</h2>
-    <p><button style="width: 100px; height: 40px;" onclick="document.getElementById('belizeImage').src='noton2.png'">ON</button></p>
-    <p><button style="width: 100px; height: 40px;" onclick="document.getElementById('belizeImage').src='notoff2.png'">OFF</button></p>
+  <div class="row">
+    <div class="column">
+      <h2>Input</h2>
+      <button onclick="document.getElementById('belizeImage').src='noton2.png'">ON</button>
+      <button onclick="document.getElementById('belizeImage').src='notoff2.png'">OFF</button>
+    </div>
+    <div class="column">
+      <h2>Output</h2>
+      <hr>
+      <img id="belizeImage" src="noton2.png" alt="noton">
+    </div>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Output</h2>
-	<hr>
-	<img id="belizeImage" src="noton2.png" alt="noton" width="400" height="86" align="center">
-  </div>
-</div>
-<a href="index.html">Back to Home</a></h3>
+  <a href="index.html">Back to Home</a>
 </section>
-</center>
-
-
 
 <footer>
-  <p>Made and designed by Darren Adilzon Cartagena!!</p>
+  <p>Made and designed by Darren Adilzon Cartagena</p>
 </footer>
 
 </body>
