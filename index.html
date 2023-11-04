@@ -18,55 +18,60 @@
     padding: 0;
   }
 
-  .text-container {
-    background-color: rgba(255, 255, 255, 0.7);
+  header {
+    background-color: #354F52;
+    color: #ffffff;
+    text-align: center;
     padding: 20px;
+  }
+
+  header h2 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    background-color: #354F52;
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .navbar li {
+    display: inline;
+    margin: 0 20px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .navbar a:hover {
+    color: #00B8D4;
+  }
+
+  .content-container {
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     margin: 20px;
-    width: 300px;
+    padding: 20px;
     text-align: center;
     transition: all 0.5s;
   }
 
-  .text-container:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    transform: scale(1.1);
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-
-  nav li {
-    margin: 0 20px;
-  }
-
-  .content {
-    padding-top: 50px; /* Adjust this value as needed to move content below the picture. */
-  }
-
-  .more-button {
-    cursor: pointer;
-  }
-
-  .hidden-nav {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    z-index: 1;
-    transition: left 0.3s;
+  .content-container:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
   }
 </style>
 </head>
@@ -74,48 +79,33 @@
 
 <header>
   <h2><b>Fundamentals of Computing</b></h2>
+  <p>This course offers a foundational introduction to Computer Science, covering key topics such as computer architecture, operating systems, software development, data organization, and the capabilities of computing machines.</p>
 </header>
 
-<div class="more-button" onclick="toggleNav()">More</div>
-
-<div class="hidden-nav" id="nav">
-  <nav>
-    <ul>
-      <li><h5><a href="index.html">Course</a></h5></li>
-      <li><h5><a href="project.html">Project</a></h5></li>
-      <li><h5><a href="concepts.html">Concepts</a></h5></li>
-      <li><h5><a href="database.html">Databases</a></h5></li>
-      <li><h5><a href="documentation.html">Documentation</a></h5></li>
-      <li><h5><a href="aboutme.html">About Me</a></h5></li>
-    </ul>
-  </nav>
+<div class="navbar">
+  <ul>
+    <li><a href="index.html">Course</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="concepts.html">Concepts</a></li>
+    <li><a href="database.html">Databases</a></li>
+    <li><a href="documentation.html">Documentation</a></li>
+    <li><a href="aboutme.html">about me</a></li>
+  </ul>
 </div>
 
-<div class="content">
-  <section>
-    <article>
-     <center><img src="fco.jpg" alt="FoC"  width="505" height="182"></center>
-     <p></p>
+<section>
+  <article>
+   <center><img src="fco.jpg" alt="FoC"  width="505" height="182"></center>
+   <p></p>
 
+    <div class="content-container">
       <p>This course offers a foundational introduction to Computer Science, covering key topics such as computer architecture, operating systems, software development, data organization, and the capabilities of computing machines.</p>
-    </article>
-  </section>
-</div>
+    </div>
+  </article>
+</section>
 
 <footer>
   <p>made and designed by Darren Adilzon Cartagena</p>
 </footer>
-
-<script>
-  function toggleNav() {
-    const nav = document.getElementById("nav");
-    if (nav.style.left === "0px" || nav.style.left === "") {
-      nav.style.left = "-300px";
-    } else {
-      nav.style.left = "0px";
-    }
-  }
-</script>
-
 </body>
 </html>
