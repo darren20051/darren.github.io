@@ -1,112 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Fundamentals of Computing</title>
+<title>Fundamentals of Computing - Project</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {
-    background-color: #00B8D4; /* Vibrant Blue background color */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #ffffff; /* White text color */
-  }
+    body {
+        background-color: #f5f5f5; /* Light Gray background color */
+        background-image: url('picture url goes here');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000000; /* Black text color */
+    }
 
-  header {
-    background-color: #354F52;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-  }
+    header {
+        background-color: #354F52;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+    }
 
-  header h2 {
-    font-size: 36px;
-  }
+    header h2 {
+        font-size: 36px;
+    }
 
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-  }
+    header p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
 
-  nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-  }
+    .navbar {
+        background-color: #354F52;
+        padding: 10px 0;
+    }
 
-  nav li {
-    display: inline;
-    margin: 0 20px;
-  }
+    .navbar ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
 
-  nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-  }
+    .navbar li {
+        display: inline;
+        margin: 0 20px;
+    }
 
-  article {
-    text-align: center;
-  }
+    .navbar a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+    }
 
-  article a {
-    text-decoration: none;
-  }
+    .navbar a:hover {
+        color: #00B8D4;
+    }
 
-  article img {
-    width: 515px;
-    height: 290px;
-    border: 5px solid #00B8D4;
-    border-radius: 10px;
-    transition: transform 0.3s;
-  }
+    .content-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.5s;
+    }
 
-  article img:hover {
-    transform: scale(1.05);
-  }
+    .content-container:hover {
+        background-color: #ffffff;
+        transform: scale(1.05);
+    }
 
-  footer {
-    text-align: center;
-    background-color: #354F52;
-    color: #ffffff;
-    padding: 10px;
-  }
+    .content-container h1 {
+        font-size: 24px;
+        color: #000000;
+    }
+
+    .content-container ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .content-container li {
+        margin: 10px 0;
+    }
+
+    .content-container a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .content-container a:hover {
+        color: #00B8D4;
+    }
 </style>
 </head>
 <body>
 
 <header>
-  <h2><b>Fundamentals of Computing</b></h2>
+    <h2><b>Fundamentals of Computing - Project</b></h2>
+    <p>Projects we worked on during the semester are listed below. You can find the coded examples of these projects.</p>
 </header>
 
-<section>
-  <nav>
+<div class="navbar">
     <ul>
-      <li><h5><a href="index.html">Course</a></h5></li>
-      <li><h5><a href="project.html">Project</a></h5></li>
-      <li><h5><a href="concepts.html">Concepts</a></h5></li>
-      <li><h5><a href="database.html">Databases</a></h5></li>
-      <li><h5><a href="documentation.html">Documentation</a></h5></li>
-      <li><h5><a href="aboutme.html">Dev Team</a></h5></li>
+        <li><a href="index.html">Course</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="concepts.html">Concepts</a></li>
+        <li><a href="database.html">Databases</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="aboutme.html">Dev Team</a></li>
     </ul>
-  </nav>
+</div>
 
-  <article>
-    <center><a href="https://docs.google.com/presentation/d/1_wW1nk16cP-OFru1zXMXjSl-FGayYYG4/edit#slide=id.p1">
-      <img src="cpubasics.jpg" alt="Concepts"></a>
-    </center>
-    <p>Click on the image above for CPU basics presentation.</p>
-  </article>
+<section>
+    <article class="content-container">
+        <h1>Project</h1>
+        <ul>
+            <li><a href="notgate.html">Project 1: NOT Gate</a></li>
+            <li><a href="andgate.html">Project 2: AND Gate</a></li>
+            <li><a href="easyand.html">Project 2: AND Gate - easy version</a></li>
+            <li><a href="binarytohex.html">Project 3: Binary to Hexadecimal Converter</a></li>
+            <li><a href="ascii.html">Project 4: ASCII Converter</a></li>
+            <li><a href="unicode.html">Project 4: UNICODE Converter</a></li>
+            <li><a href="MLinstructions.html">Project 5: Machine Language Instructions Converter</a></li>
+        </ul>
+    </article>
 </section>
 
 <footer>
-  <p>Made and designed by Darren Adilzon Cartagena!</p>
+    <p>made and designed by Darren Adilzon Cartagena</p>
 </footer>
-
 </body>
 </html>
