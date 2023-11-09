@@ -32,14 +32,16 @@
         nav {
             text-align: center;
             position: relative;
-            z-index: 2; /* Ensure the navigation bar appears above the image */
+            z-index: 2;
+            background-color: #f5f5f5; /* Add a background color to make links visible */
         }
 
         nav ul {
             list-style: none;
             padding: 0;
-            display: flex; /* Make the list items display in a row */
-            justify-content: center; /* Center the list items horizontally */
+            display: flex;
+            justify-content: center;
+            margin: 0; /* Remove default margin */
         }
 
         nav li {
@@ -58,7 +60,7 @@
 
         article {
             text-align: center;
-            margin-top: 60px; /* Adjust margin as needed */
+            margin-top: 60px;
         }
 
         article a {
@@ -72,10 +74,10 @@
         }
 
         article img {
-            width: 100%; /* Make the image responsive */
-            max-width: 515px; /* Adjust the maximum width as needed */
+            width: 100%;
+            max-width: 515px;
             height: auto;
-            margin-top: 40px; /* Adjust margin as needed */
+            margin-top: 40px;
         }
 
         footer {
