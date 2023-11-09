@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <style>
         body {
-            background-color: #f5f5f5;
             background-image: url('picture url goes here');
             background-size: cover;
             background-repeat: no-repeat;
@@ -18,7 +16,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #000000;
         }
 
         header {
@@ -37,46 +34,55 @@
             margin-top: 10px;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
+        .navbar {
+            background-color: #354F52;
+            padding: 10px 0;
             text-align: center;
         }
 
-        nav li {
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar li {
             display: inline;
             margin: 0 20px;
         }
 
-        nav a {
+        .navbar a {
             text-decoration: none;
-            color: #000000;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            color: #00B8D4;
-        }
-
-        article {
-            text-align: center;
-        }
-
-        article a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 18px;
-        }
-
-        article a:hover {
-            color: #00B8D4;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #354F52;
             color: #ffffff;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #00B8D4;
+        }
+
+        .content-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.5s;
+        }
+
+        .content-container:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .content-container img {
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .instagram-icon {
+            width: 40px; /* Adjust the size as needed */
+            height: auto;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -84,33 +90,34 @@
 
 <header>
     <h2><b>Fundamentals of Computing</b></h2>
+    <p>This course offers a foundational introduction to Computer Science, covering key topics such as computer architecture, operating systems, software development, data organization, and the capabilities of computing machines.</p>
 </header>
 
-<section>
-    <nav>
-        <ul>
-            <li><h5><a href="index.html">Course</a></h5></li>
-            <li><h5><a href="project.html">Project</a></h5></li>
-            <li><h5><a href="concepts.html">Concepts</a></h5></li>
-            <li><h5><a href="database.html">Databases</a></h5></li>
-            <li><h5><a href="documentation.html">Documentation</a></h5></li>
-            <li><h5><a href="aboutme.html">Dev Team</a></h5></li>
-        </ul>
-    </nav>
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">Course</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="concepts.html">Concepts</a></li>
+        <li><a href="database.html">Databases</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="aboutme.html">about me</a></li>
+    </ul>
+</div>
 
+<section>
     <article>
-        <center>
-            <a href="https://docs.google.com/presentation/d/1_wW1nk16cP-OFru1zXMXjSl-FGayYYG4/edit#slide=id.p1">
-                <img src="cpubasics.jpg" alt="Concepts" width="515" height="290">
-            </a>
-            <p></p>
-            <p>Click on the image above for CPU basics presentation.</p>
-        </center>
+        <center><img src="fco.jpg" alt="FoC" width="505" height="182"></center>
+        <p></p>
+
+        <div class="content-container">
+            <!-- Remove the repeated sentence -->
+        </div>
     </article>
 </section>
 
 <footer>
-    <p>Made and designed by Darren Adilzon Cartagena!</p>
+    <p>made and designed by Darren Adilzon Cartagena
+        <a href="https://www.instagram.com/darrencartagena/"><img class="instagram-icon" src="darrenig.PNG" alt="Instagram"></a></p>
 </footer>
 
 </body>
