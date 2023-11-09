@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>FoC</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -15,10 +13,9 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
         }
 
         header {
@@ -26,18 +23,16 @@
             color: #ffffff;
             text-align: center;
             padding: 20px;
-            border-bottom: 3px solid #00B8D4;
         }
 
         header h2 {
             font-size: 36px;
-            margin-bottom: 10px;
-            font-family: 'Cursive', sans-serif;
         }
 
         nav {
             text-align: center;
-            margin-bottom: 20px;
+            background-color: #f5f5f5;
+            padding: 10px 0;
         }
 
         nav ul {
@@ -45,10 +40,7 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            background-color: #354F52;
-            margin: 0;
-            padding: 10px;
-            border-bottom: 3px solid #00B8D4;
+            align-items: center;
         }
 
         nav li {
@@ -57,10 +49,8 @@
 
         nav a {
             text-decoration: none;
-            color: #ffffff;
+            color: #000000;
             font-size: 18px;
-            font-family: 'Arial', sans-serif;
-            transition: color 0.3s ease;
         }
 
         nav a:hover {
@@ -69,66 +59,63 @@
 
         article {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 60px;
         }
 
         article a {
             text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+        }
+
+        article a:hover {
+            color: #00B8D4;
         }
 
         article img {
-            border: 5px solid #00B8D4;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        article img:hover {
-            transform: scale(1.05);
-        }
-
-        article p {
-            font-size: 20px;
-            color: #333;
+            width: 100%;
+            max-width: 515px;
+            height: auto;
+            margin-top: 40px;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             background-color: #354F52;
             color: #ffffff;
         }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h2><b>Fundamentals of Computing</b></h2>
-    </header>
+<header>
+    <h2><b>Fundamentals of Computing</b></h2>
+</header>
 
-    <nav>
-        <ul>
-            <li><h5><a href="index.html">Course</a></h5></li>
-            <li><h5><a href="project.html">Project</a></h5></li>
-            <li><h5><a href="concepts.html">Concepts</a></h5></li>
-            <li><h5><a href="database.html">Databases</a></h5></li>
-            <li><h5><a href="documentation.html">Documentation</a></h5></li>
-            <li><h5><a href="aboutme.html">Dev Team</a></h5></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><h5><a href="index.html">Course</a></h5></li>
+        <li><h5><a href="project.html">Project</a></h5></li>
+        <li><h5><a href="concepts.html">Concepts</a></h5></li>
+        <li><h5><a href="database.html">Databases</a></h5></li>
+        <li><h5><a href="documentation.html">Documentation</a></h5></li>
+    </ul>
+</nav>
 
+<section>
     <article>
-        <a href="https://docs.google.com/presentation/d/1U9iXLG5U7AraTIjt5SQsIQRBqt_v-x6M59IeAXXUDR0/edit?usp=sharing">
-            <img src="cpubasics.jpg" alt="Concepts" width="515" height="290">
-        </a>
-        <p></p>
-        <p>Click on the image to see the CPU basics presentation!</p>
+        <center>
+            <a href="https://docs.google.com/presentation/d/1U9iXLG5U7AraTIjt5SQsIQRBqt_v-x6M59IeAXXUDR0/edit?usp=sharing">
+                <img src="cpubasics.jpg" alt="Concepts">
+            </a>
+        </center>
     </article>
+</section>
 
-    <footer>
-        <p>Made and designed by Darren Adilzon Cartagena!</p>
-    </footer>
+<footer>
+    <p>Made and designed by Darren Adilzon Cartagena!</p>
+</footer>
 
 </body>
-
 </html>
