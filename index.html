@@ -1,107 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>FoC</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      background-image: url('picture url goes here');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <title>FoC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url('picture url goes here');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    .text-container {
-      background-color: rgba(255, 255, 255, 0.7);
-      padding: 20px;
-      border-radius: 5px;
-      margin: 20px;
-      width: 300px;
-      text-align: center;
-      transition: all 0.5s;
-    }
+        header {
+            background-color: #354F52;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
 
-    .text-container:hover {
-      background-color: rgba(255, 255, 255, 0.9);
-      transform: scale(1.1);
-    }
+        header h2 {
+            font-size: 36px;
+        }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: rgba(255, 255, 255, 0.7);
-      position: relative;
-      z-index: 1;
-    }
+        nav {
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 10px 0;
+        }
 
-    nav {
-      z-index: 2;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of the viewport */
+            margin: 0;
+        }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column; /* Updated to make links appear vertically */
-      align-items: center; /* Center the links horizontally */
-    }
+        nav li {
+            margin: 10px 0;
+        }
 
-    nav li {
-      margin: 10px 0; /* Add margin for spacing between links */
-    }
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+        }
 
-    nav a {
-      text-decoration: none;
-      color: #000000; /* Updated link color */
-      font-size: 1.2em;
-      transition: color 0.3s ease-in-out;
-    }
+        nav a:hover {
+            color: #00B8D4;
+        }
 
-    nav a:hover {
-      color: #42A5F5;
-    }
-  </style>
+        article {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        article a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+        }
+
+        article a:hover {
+            color: #00B8D4;
+        }
+
+        article img {
+            width: 100%;
+            max-width: 515px;
+            height: auto;
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #354F52;
+            color: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>
-    <h2><b>Fundamentals of Computing</b></h2>
-  </header>
+    <header>
+        <h2><b>Fundamentals of Computing</b></h2>
+    </header>
 
-  <nav>
-    <ul>
-      <li><h5><a href="index.html">Course</a></h5></li>
-      <li><h5><a href="project.html">Project</a></h5></li>
-      <li><h5><a href="concepts.html">Concepts</a></h5></li>
-      <li><h5><a href="database.html">Databases</a></h5></li>
-      <li><h5><a href="documentation.html">Documentation</a></h5></li>
-      <li><h5><a href="aboutme.html">About Me</a></h5></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li><h5><a href="index.html">Course</a></h5></li>
+            <li><h5><a href="project.html">Project</a></h5></li>
+            <li><h5><a href="concepts.html">Concepts</a></h5></li>
+            <li><h5><a href="database.html">Databases</a></h5></li>
+            <li><h5><a href="documentation.html">Documentation</a></h5></li>
+            <li><h5><a href="aboutme.html">Dev Team</a></h5></li>
+        </ul>
+    </nav>
 
-  <section>
-    <article>
-      <center><img src="fco.jpg" alt="FoC" width="505" height="182"></center>
-      <p></p>
+    <section>
+        <article>
+            <center>
+                <a href="https://docs.google.com/presentation/d/1_wW1nk16cP-OFru1zXMXjSl-FGayYYG4/edit?usp=sharing&ouid=115036594870027335062&rtpof=true&sd=true">
+                    <img src="cpubasics.jpg" alt="Concepts">
+                    <p>click the picture above for cpu basics presentation!</p>
+                </a>
+            </center>
+        </article>
+    </section>
 
-      <p>This course offers a foundational introduction to Computer Science, covering key topics such as computer architecture, operating systems, software development, data organization, and the capabilities of computing machines.</p>
-    </article>
-  </section>
+    <footer>
+        <p>Made and designed by Darren Adilzon Cartagena!</p>
+    </footer>
 
-  <footer>
-    <p>made and designed by Darren Adilzon Cartagena</p>
-  </footer>
 </body>
 
 </html>
