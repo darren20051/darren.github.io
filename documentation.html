@@ -1,126 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>FoC - Fundamentals of Computing</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      background-image: url('picture url goes here');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #2c3e50; /* Cool grey background color */
+            color: #ecf0f1; /* Light text color */
+        }
 
-    header {
-      background-color: #354F52;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px;
-    }
+        header {
+            background-color: #34495e; /* Darker grey header */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
 
-    header h1 {
-      font-size: 36px;
-    }
+        nav {
+            background-color: #95a5a6; /* Light grey navigation background */
+            padding: 10px;
+            text-align: center;
+        }
 
-    nav {
-      text-align: center;
-      background-color: #f5f5f5;
-      padding: 10px 0;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* Full height of the viewport */
-      margin: 0;
-    }
+        nav li {
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
 
-    nav li {
-      margin: 10px 0;
-    }
+        nav a {
+            text-decoration: none;
+            color: #ecf0f1; /* Light text color */
+            padding: 8px 16px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-    nav a {
-      text-decoration: none;
-      color: #000000;
-      font-size: 18px;
-    }
+        nav a:hover {
+            background-color: #7f8c8d; /* Darker grey on hover */
+        }
 
-    nav a:hover {
-      color: #00B8D4;
-    }
+        .link {
+            background-color: #34495e; /* Darker grey link background */
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
 
-    article {
-      text-align: center;
-      margin-top: 60px;
-    }
+        .link:hover {
+            background-color: #7f8c8d; /* Darker grey on hover */
+        }
 
-    article a {
-      text-decoration: none;
-      color: #000000;
-      font-size: 18px;
-    }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
 
-    article a:hover {
-      color: #00B8D4;
-    }
+        img {
+            max-width: 27%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px; /* Optional: Adds a slight border radius to the image */
+        }
 
-    article img {
-      width: 100%;
-      max-width: 515px;
-      height: auto;
-      margin-top: 40px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #354F52;
-      color: #ffffff;
-    }
-  </style>
+        footer {
+            background-color: #34495e; /* Darker grey footer */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <h1><b> Fundamentals of Computing</b></h1>
-</header>
+    <header>
+        <h1>Documentation</h1>
+    </header>
 
-<nav>
-  <ul>
-    <li><a href="index.html">Course</a></li>
-    <li><a href="project.html">Project</a></li>
-    <li><a href="concepts.html">Concepts</a></li>
-    <li><a href="database.html">Databases</a></li>
-    <li><a href="documentation.html">Documentation</a></li>
-    <li><a href="aboutme.html">Dev Team</a></li>
-  </ul>
-</nav>
+    <nav>
+        <ul>
+            <li class="link"><a href="index.html">Course</a></li>
+            <li class="link"><a href="project.html">Project</a></li>
+            <li class="link"><a href="concepts.html">Concepts</a></li>
+            <li class="link"><a href="#">Database</a></li>
+            <li class="link"><a href="#">Documentation</a></li>
+            <li class="link"><a href="#">About Me</a></li>
+        </ul>
+    </nav>
 
-<section>
-  <article>
-    <center>
-      <a href="https://drive.google.com/file/d/1emYNyAIPOih0PMWEr-woOZiIIOPaUv4t/view?usp=sharing">
-        <img src="documentation.png" alt="Documentation">
-      </a>
-    </center>
-    <p>Click on the image above to access the presentation.</p>
-  </article>
-</section>
+    <main>
+        <a href="https://drive.google.com/file/d/1emYNyAIPOih0PMWEr-woOZiIIOPaUv4t/view?usp=sharing">
+        <img src="documents.png" alt=" ">
+        <p> Click on the image above to see the documentation presentation. </p>
+    </main>
 
-<footer>
-  <p>Made and designed by Darren Adilzon Cartagena</p>
-</footer>
+    <footer>
+        <p> Made and designed by Darren Cartagena. </p>
+    </footer>
 
 </body>
 </html>
